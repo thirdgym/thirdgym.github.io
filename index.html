@@ -6,12 +6,88 @@ layout: none
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>kei’s notebook</title>
+  <title>kei’s diary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* GENERAL LAYOUT */
+    body {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 1rem 2rem;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      background: #fff0f5; /* soft lavender */
+      color: #333;
+      line-height: 1.6;
+      border: 2px dashed #ffb6c1; /* cute border */
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    /* HEADER */
+    h1 {
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* totally early 2000s vibe */
+      font-size: 2.2rem;
+      color: #ff69b4;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #c71585;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dotted #ff69b4;
+      margin: 2rem 0;
+    }
+
+    /* POST STYLING */
+    article {
+      background: #fffaf0;
+      border: 1px solid #ffb6c1;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: #ff1493;
+      margin-top: 0;
+    }
+
+    time {
+      font-size: 0.85rem;
+      color: #c71585;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.7rem;
+    }
+
+    img {
+      max-width: 100%;
+      border: 1px solid #ffb6c1;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: #ff1493;
+      text-decoration: underline dotted;
+    }
+  </style>
 </head>
 <body>
 
-<h1>kei’s notebook</h1>
-<p>daily life. quiet thoughts.</p>
+<h1>kei’s diary</h1>
+<p class="subtitle">daily thoughts, feelings & cute randomness ✨</p>
 
 <hr>
 
@@ -19,6 +95,7 @@ layout: none
 <article>
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+  {{ post.excerpt }}
 </article>
 {% endfor %}
 
