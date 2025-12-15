@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: coquette
 title: "my first post"
 ---
 
