@@ -6,34 +6,36 @@ layout: none
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>kei’s diary</title>
+  <title>kei’s diary ✨</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* GENERAL LAYOUT */
+    /* 🌸 BODY & BACKGROUND */
     body {
-      max-width: 700px;
-      margin: 3rem auto;
+      max-width: 750px;
+      margin: 2rem auto;
       padding: 1rem 2rem;
-      font-family: 'Trebuchet MS', Arial, sans-serif;
-      background: #fff0f5; /* soft lavender */
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom, #ffe6f0, #fff0f5);
       color: #333;
       line-height: 1.6;
-      border: 2px dashed #ffb6c1; /* cute border */
+      border: 3px dashed #ff69b4;
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      box-shadow: 0 0 25px rgba(255,105,180,0.2);
     }
 
-    /* HEADER */
+    /* 🌸 HEADER */
     h1 {
-      font-family: 'Comic Sans MS', cursive, sans-serif; /* totally early 2000s vibe */
-      font-size: 2.2rem;
-      color: #ff69b4;
+      font-size: 2.5rem;
+      color: #ff1493;
       margin-bottom: 0;
+      text-align: center;
+      text-shadow: 1px 1px 2px #ffb6c1;
     }
 
     .subtitle {
       font-style: italic;
       color: #c71585;
+      text-align: center;
       margin-top: 0;
       margin-bottom: 2rem;
     }
@@ -44,26 +46,46 @@ layout: none
       margin: 2rem 0;
     }
 
-    /* POST STYLING */
+    /* 🌸 POST CONTAINERS */
     article {
       background: #fffaf0;
-      border: 1px solid #ffb6c1;
-      padding: 1rem;
+      border: 2px solid #ffb6c1;
+      padding: 1rem 1.5rem;
       margin-bottom: 2rem;
-      border-radius: 10px;
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* sparkle effect */
+    article::after {
+      content: '✨';
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 1.2rem;
+      opacity: 0.5;
+      animation: sparkle 3s infinite alternate;
+    }
+
+    @keyframes sparkle {
+      0% {opacity:0.2;}
+      50% {opacity:0.8;}
+      100% {opacity:0.2;}
     }
 
     h2 {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      color: #ff1493;
+      font-size: 1.8rem;
+      color: #ff69b4;
       margin-top: 0;
+      margin-bottom: 0.3rem;
     }
 
     time {
       font-size: 0.85rem;
       color: #c71585;
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.7rem;
     }
 
     p {
@@ -82,12 +104,30 @@ layout: none
       color: #ff1493;
       text-decoration: underline dotted;
     }
+
+    /* 🌸 SIDEBAR LINKS (optional) */
+    .sidebar {
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .sidebar a {
+      margin: 0 0.5rem;
+    }
+
   </style>
 </head>
 <body>
 
-<h1>kei’s diary</h1>
-<p class="subtitle">daily thoughts, feelings & cute randomness ✨</p>
+<h1>kei’s diary ✨</h1>
+<p class="subtitle">daily thoughts, cute randomness & feelings 💖</p>
+
+<div class="sidebar">
+  <a href="#">home</a> | 
+  <a href="#">about me</a> | 
+  <a href="#">archives</a>
+</div>
 
 <hr>
 
